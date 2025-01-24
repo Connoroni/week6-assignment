@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 // import { fetchData } from "../lib/data";
 import ShopUpgrades from "./ShopUpgrades";
 
-export default function Shop() {
+export default function Shop(props) {
   const [upgrades, setUpgrades] = useState([]);
   useEffect(() => {
     async function fetchData() {
@@ -23,6 +23,7 @@ export default function Shop() {
             name={item.name}
             cost={item.cost}
             increase={item.increase}
+            buyEvent={props.buyEvent}
           />
         );
       })}

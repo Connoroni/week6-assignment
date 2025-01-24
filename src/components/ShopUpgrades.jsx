@@ -4,7 +4,7 @@ export default function ShopUpgrades(props) {
       <p className="upgrade-name">{props.name}</p>
       <p className="upgrade-cost">{props.cost}</p>
       <p className="upgrade-increase">{props.increase}</p>
-      <button>Buy!</button>
+      <button onClick={props.buyEvent}>Buy!</button>
     </div>
   );
 }
