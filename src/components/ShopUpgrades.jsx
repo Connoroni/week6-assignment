@@ -7,6 +7,7 @@ export default function ShopUpgrades(props) {
       <p className="upgrade-cost">{props.cost}</p>
       <p className="upgrade-increase">{props.increase}</p>
       <button
+        className="upgrade-button"
         onClick={() => {
           props.buyEvent(props.cost, props.increase);
         }}

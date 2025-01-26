@@ -6,6 +6,7 @@ import Shop from "./components/Shop";
 export default function App() {
   const [biscuits, setBiscuits] = useState(0);
   const [bps, setBps] = useState(0);
+  const [notEnough, setNotEnough] = useState(false);
   useEffect(() => {
     const biscuitTimer = setInterval(
       () =>
@@ -24,16 +25,28 @@ export default function App() {
     });
   }
   function buyUpgrade(cost, increase) {
-    setBps((currentBps) => {
-      return currentBps + increase;
-    });
-    setBiscuits((currentBiscuits) => {
-      return currentBiscuits - cost;
-    });
+    if (biscuits > cost) {
+      setBps((currentBps) => {
+        return currentBps + increase;
+      });
+      setBiscuits((currentBiscuits) => {
+        return currentBiscuits - cost;
+      });
+    } else {
+      setNotEnough(true);
+      setTimeout(() => {
+        setNotEnough(false);
+      }, 1500);
+    }
   }
   return (
     <>
       <Header totalBiscuits={biscuits} bps={bps} clickEvent={clickBiscuit} />
+      {notEnough ? (
+        <div className="message-div">
+          <p className="not-enough">You don&apos;t have enough biscuits</p>
+        </div>
+      ) : null}
       <Shop buyEvent={buyUpgrade} />
     </>
   );
