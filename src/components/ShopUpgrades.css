@@ -1,0 +1,9 @@
+.upgrade {
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(140, 192, 149);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 10%;
+}

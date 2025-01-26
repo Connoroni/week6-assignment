@@ -13,7 +13,7 @@ export default function Header(props) {
         </h2>
         <Biscuits clickEvent={props.clickEvent} />
         <h2 className="biscuits-per-second">
-          Biscuits per Second: {props.bps}{" "}
+          Biscuits per Second: {props.bps}
         </h2>
       </div>
     </header>

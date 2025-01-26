@@ -1,13 +1,12 @@
 .biscuit-button {
-  width: 15vw;
-  height: auto;
-  padding-left: 0.5vw;
-  padding-right: 0.5vw;
-  padding-bottom: 1vw;
+  height: 16.5vh;
+  width: auto;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
 }
 
 .biscuit-button:hover {
-  width: 16vw;
+  height: 18vh;
   padding: 0;
   /* padding-left: 2.5vw;
   padding-right: 2.5vw; */

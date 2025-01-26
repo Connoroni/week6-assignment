@@ -5,12 +5,12 @@ import Shop from "./components/Shop";
 
 export default function App() {
   const [biscuits, setBiscuits] = useState(0);
-  const [bps, setBps] = useState(0);
+  const [bps, setBps] = useState(1);
   useEffect(() => {
     const biscuitTimer = setInterval(
       () =>
         setBiscuits((currentBiscuits) => {
-          currentBiscuits + bps;
+          return currentBiscuits + bps;
         }),
       1000
     );
@@ -20,7 +20,7 @@ export default function App() {
   }, [bps]);
   function clickBiscuit() {
     setBiscuits((currentBiscuits) => {
-      currentBiscuits + 1;
+      return currentBiscuits + 1;
     });
   }
   function buyUpgrade(cost, increase) {

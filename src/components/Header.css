@@ -1,6 +1,7 @@
 header {
   width: 100vw;
-  height: 30vh;
+  min-height: 35vh;
+  max-height: fit-content;
   background-color: green;
   display: flex;
   flex-direction: column;
@@ -15,8 +16,9 @@ header {
 }
 
 .biscuit-display {
+  height: 25vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-around center;
   align-items: center;
 }
