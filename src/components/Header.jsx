@@ -11,7 +11,10 @@ export default function Header(props) {
         <h2 className="total-biscuits">
           Total biscuits: {props.totalBiscuits}
         </h2>
-        <Biscuits clickEvent={props.clickEvent} />
+        <Biscuits
+          clickEvent={props.clickEvent}
+          // bourbon={props.bourbon}
+        />
         <h2 className="biscuits-per-second">
           Biscuits per Second: {props.bps}
         </h2>

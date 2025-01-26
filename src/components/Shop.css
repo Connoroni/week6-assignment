@@ -4,7 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(105, 202, 105);
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp4041009.jpg&f=1&nofb=1&ipt=a753a94a4d21e6bb9e7dbc40b58d123a2d0b5938344581135aad82794ec54932&ipo=images);
+  background-position: center;
+  background-size: 20vw;
+  /* background-color: rgb(105, 202, 105); */
 }
 
 .shop-div {

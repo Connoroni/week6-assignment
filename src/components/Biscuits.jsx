@@ -4,11 +4,26 @@ import "./Biscuits.css";
 export default function Biscuits(props) {
   return (
     <>
+      {/* {props.bourbon ? (
+        <img
+          onClick={props.clickEvent}
+          className="biscuit-button"
+          src="/bourbon.png"
+          alt="A bourbon biscuit, this is used as the button for the user to click to get more biscuits."
+        />
+      ) : (
+        <img
+          onClick={props.clickEvent}
+          className="biscuit-button"
+          src="/custard_cream_transparent.png"
+          alt="A custard cream biscuit, this is used as the button for the user to click to get more biscuits."
+        />
+      )} */}
       <img
         onClick={props.clickEvent}
         className="biscuit-button"
         src="/custard_cream_transparent.png"
-        alt="A custard cream biscuit, this is used as the button for the user to click to get more cookies."
+        alt="A custard cream biscuit, this is used as the button for the user to click to get more biscuits."
       />
     </>
   );

@@ -22,3 +22,10 @@ header {
   justify-content: space-around center;
   align-items: center;
 }
+
+@media (min-width: 900px) {
+  .biscuit-display {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -7,6 +7,7 @@ export default function App() {
   const [biscuits, setBiscuits] = useState(0);
   const [bps, setBps] = useState(0);
   const [notEnough, setNotEnough] = useState(false);
+  // const [isBourbon, setBourbon] = useState(false);
   useEffect(() => {
     const biscuitTimer = setInterval(
       () =>
@@ -41,13 +42,21 @@ export default function App() {
   }
   return (
     <>
-      <Header totalBiscuits={biscuits} bps={bps} clickEvent={clickBiscuit} />
+      <Header
+        totalBiscuits={biscuits}
+        bps={bps}
+        clickEvent={clickBiscuit}
+        // bourbon={isBourbon}
+      />
       {notEnough ? (
         <div className="message-div">
           <p className="not-enough">You don&apos;t have enough biscuits</p>
         </div>
       ) : null}
       <Shop buyEvent={buyUpgrade} />
+      {/* <div className="secret-button" onClick={setBourbon(!isBourbon)}>
+        Secret Button
+      </div> */}
     </>
   );
 }
